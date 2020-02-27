@@ -1,0 +1,31 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio Version 16
+VisualStudioVersion = 16.0.29728.190
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{8BC9CEB8-8B4A-11D0-8D11-00A0C91BC942}") = "Video Shoppe", "Video Shoppe.vcxproj", "{57788A03-2654-4805-9E1B-4FBAE1139C20}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Debug|x64.ActiveCfg = Debug|x64
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Debug|x64.Build.0 = Debug|x64
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Debug|x86.ActiveCfg = Debug|Win32
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Debug|x86.Build.0 = Debug|Win32
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Release|x64.ActiveCfg = Release|x64
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Release|x64.Build.0 = Release|x64
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Release|x86.ActiveCfg = Release|Win32
+		{57788A03-2654-4805-9E1B-4FBAE1139C20}.Release|x86.Build.0 = Release|Win32
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {E46352C9-D131-45EF-BE2A-899C0698EAB5}
+	EndGlobalSection
+EndGlobal
