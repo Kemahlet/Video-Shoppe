@@ -148,24 +148,48 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClInclude Include="Address.h" />
+    <ClInclude Include="add_customer.h" />
+    <ClInclude Include="add_employee.h" />
     <ClInclude Include="BankCard.h" />
+    <ClInclude Include="clerk_page.h" />
     <ClInclude Include="Customer.h" />
+    <ClInclude Include="database.h" />
     <ClInclude Include="DVD.h" />
     <ClInclude Include="framework.h" />
+    <ClInclude Include="mainwindow.h" />
+    <ClInclude Include="manager_page.h" />
     <ClInclude Include="Rental.h" />
     <ClInclude Include="Resource.h" />
+    <ClInclude Include="return_dvd.h" />
     <ClInclude Include="targetver.h" />
     <ClInclude Include="Transaction.h" />
+    <ClInclude Include="ui_add_customer.h" />
+    <ClInclude Include="ui_add_employee.h" />
+    <ClInclude Include="ui_clerk_page.h" />
+    <ClInclude Include="ui_mainwindow.h" />
+    <ClInclude Include="ui_manager_page.h" />
+    <ClInclude Include="ui_return_dvd.h" />
+    <ClInclude Include="ui_view_inventory.h" />
     <ClInclude Include="Video Shoppe.h" />
+    <ClInclude Include="view_inventory.h" />
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Address.cpp" />
+    <ClCompile Include="add_customer.cpp" />
+    <ClCompile Include="add_employee.cpp" />
     <ClCompile Include="BankCard.cpp" />
+    <ClCompile Include="clerk_page.cpp" />
     <ClCompile Include="Customer.cpp" />
+    <ClCompile Include="database.cpp" />
     <ClCompile Include="DVD.cpp" />
+    <ClCompile Include="main.cpp" />
+    <ClCompile Include="mainwindow.cpp" />
+    <ClCompile Include="manager_page.cpp" />
     <ClCompile Include="Rental.cpp" />
+    <ClCompile Include="return_dvd.cpp" />
     <ClCompile Include="Transaction.cpp" />
     <ClCompile Include="Video Shoppe.cpp" />
+    <ClCompile Include="view_inventory.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Video Shoppe.rc" />
@@ -173,6 +197,15 @@
   <ItemGroup>
     <Image Include="small.ico" />
     <Image Include="Video Shoppe.ico" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="add_customer.ui" />
+    <None Include="add_employee.ui" />
+    <None Include="clerk_page.ui" />
+    <None Include="mainwindow.ui" />
+    <None Include="manager_page.ui" />
+    <None Include="return_dvd.ui" />
+    <None Include="view_inventory.ui" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">

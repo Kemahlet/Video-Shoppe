@@ -16,7 +16,9 @@ class BankCard{
 	string expirationDate;
 
 public:
-	BankCard();
+	BankCard(string customerID, string typeOfCard, string bank, string cardNumber,
+		string nameOnCard, string expirationDate);
 	virtual ~BankCard();
 };
 
+#endif

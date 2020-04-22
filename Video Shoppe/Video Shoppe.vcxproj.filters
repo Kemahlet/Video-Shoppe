@@ -45,6 +45,51 @@
     <ClInclude Include="Rental.h">
       <Filter>Header Files</Filter>
     </ClInclude>
+    <ClInclude Include="add_customer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="add_employee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="clerk_page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="database.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="manager_page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="return_dvd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="view_inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_add_customer.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_add_employee.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_clerk_page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_mainwindow.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_manager_page.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_return_dvd.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
+    <ClInclude Include="ui_view_inventory.h">
+      <Filter>Header Files</Filter>
+    </ClInclude>
   </ItemGroup>
   <ItemGroup>
     <ClCompile Include="Video Shoppe.cpp">
@@ -68,6 +113,33 @@
     <ClCompile Include="Rental.cpp">
       <Filter>Source Files</Filter>
     </ClCompile>
+    <ClCompile Include="add_customer.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="add_employee.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="clerk_page.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="database.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="main.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="mainwindow.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="manager_page.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="return_dvd.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
+    <ClCompile Include="view_inventory.cpp">
+      <Filter>Source Files</Filter>
+    </ClCompile>
   </ItemGroup>
   <ItemGroup>
     <ResourceCompile Include="Video Shoppe.rc">
@@ -81,5 +153,14 @@
     <Image Include="Video Shoppe.ico">
       <Filter>Resource Files</Filter>
     </Image>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="add_customer.ui" />
+    <None Include="add_employee.ui" />
+    <None Include="clerk_page.ui" />
+    <None Include="mainwindow.ui" />
+    <None Include="manager_page.ui" />
+    <None Include="return_dvd.ui" />
+    <None Include="view_inventory.ui" />
   </ItemGroup>
 </Project>

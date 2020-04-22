@@ -18,7 +18,8 @@ class Address {
 	string postalCode;
 
 public:
-	Address();
+	Address(string customerID, string addressType, string careOf, string building,
+		string street, string unit, string city, string state, string postalCode);
 	virtual ~Address();
 };
 
