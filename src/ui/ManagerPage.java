@@ -9,6 +9,7 @@ import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
 import org.eclipse.swt.events.SelectionEvent;
+import business.*;
 
 public class ManagerPage extends Composite {
 	private Text txtAddCustomer;
@@ -23,6 +24,8 @@ public class ManagerPage extends Composite {
 		super(parent, style);
 		setLayout(new GridLayout(4, false));
 		
+		Employee current = new Employee();
+		
 		txtHello = new Text(this, SWT.BORDER);
 		txtHello.setText("Hello, ");
 		GridData gd_txtHello = new GridData(SWT.FILL, SWT.CENTER, true, false, 1, 1);
@@ -30,6 +33,7 @@ public class ManagerPage extends Composite {
 		txtHello.setLayoutData(gd_txtHello);
 		
 		Label employeeName = new Label(this, SWT.NONE);
+		employeeName.setText(current.getName());
 		new Label(this, SWT.NONE);
 		new Label(this, SWT.NONE);
 		
@@ -37,6 +41,7 @@ public class ManagerPage extends Composite {
 		lblEmployeeId.setText("Employee ID:");
 		
 		Label idNumber = new Label(this, SWT.NONE);
+		idNumber.setText(current.getEmployeeID());
 		new Label(this, SWT.NONE);
 		new Label(this, SWT.NONE);
 		
@@ -44,6 +49,7 @@ public class ManagerPage extends Composite {
 		lblHoursWorked.setText("Hours Worked:");
 		
 		Label hrsWorked = new Label(this, SWT.NONE);
+		hrsWorked.setText(Integer.toString(current.getHoursWorked()));
 		new Label(this, SWT.NONE);
 		new Label(this, SWT.NONE);
 		new Label(this, SWT.NONE);

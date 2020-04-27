@@ -3,7 +3,7 @@ package business;
 import java.sql.Date;
 
 public class Customer {
-	public String customerID;
+	private String customerID;
 	private String lastName;
 	private String firstName;
 	private char middleInitial;
@@ -16,6 +16,34 @@ public class Customer {
 	
 	public Customer() {
 		
+	}
+	
+	public String getCustomerID() {
+		return customerID;
+	}
+	
+	public String getCustomerName() {
+		return lastName + ", " + firstName + " " + middleInitial;
+	}
+	
+	public Date getBirthDate() {
+		return birthDate;
+	}
+	
+	public int getAge() {
+		return age;
+	}
+	
+	public String getAddress() {
+		return address;
+	}
+	
+	public String getPhone() {
+		return phone;
+	}
+	
+	public String getBankCard() {
+		return bankCard;
 	}
 	
 	public DVD[] getRentals() {
