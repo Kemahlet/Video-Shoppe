@@ -136,14 +136,15 @@ public class Login {
 					return;
 				}
 				
-				if (password == null) {
+				else if (password == null) {
 					MessageBox dialog = new MessageBox(shell, SWT.ERROR | SWT.OK);
 					dialog.setText("Error");
 					dialog.setMessage("Please enter your password.");
 					dialog.open();
 					return;
 				}
-				try {
+				else {
+					try {
 						String correctPassword = database.getEmployeePassword(username);
 					
 					if (correctPassword != null) {
@@ -153,7 +154,8 @@ public class Login {
 							dialog.setMessage("Login successful!");
 							dialog.open();
 							if (database.checkIfManager(username)) {
-								
+								ManagerPage managerPage = new ManagerPage(username, database.getEmployeeName(username), database.getHoursWorked(username));
+								managerPage.open();
 							}
 						}
 						else {
@@ -161,17 +163,18 @@ public class Login {
 							dialog.setText("Error");
 							dialog.setMessage("Incorrect password!");
 							dialog.open();
+							}
 						}
+						else {
+							MessageBox dialog = new MessageBox(shell, SWT.ERROR | SWT.OK);
+							dialog.setText("Error");
+							dialog.setMessage("ID not found!");
+							dialog.open();
+						}
+					} catch (Exception e) {
+						// TODO Auto-generated catch block
+						e.printStackTrace();
 					}
-					else {
-						MessageBox dialog = new MessageBox(shell, SWT.ERROR | SWT.OK);
-						dialog.setText("Error");
-						dialog.setMessage("ID not found!");
-						dialog.open();
-					}
-				} catch (Exception e) {
-					// TODO Auto-generated catch block
-					e.printStackTrace();
 				}
 			}
 		});
