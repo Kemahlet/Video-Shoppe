@@ -8,9 +8,6 @@ import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.widgets.MessageBox;
 
-import java.sql.ResultSet;
-import java.sql.SQLException;
-
 import org.eclipse.swt.SWT;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.widgets.Text;
@@ -26,6 +23,11 @@ public class Login {
 	private Text entryPassword;
 	private Database database = new Database();
 
+	// Instantiate a Login object for opening the login window
+	public Login() {
+		
+	}
+	
 	/**
 	 * Launch the application.
 	 * @param args
@@ -153,9 +155,15 @@ public class Login {
 							dialog.setText("Information");
 							dialog.setMessage("Login successful!");
 							dialog.open();
+							shell.close();
 							if (database.checkIfManager(username)) {
 								ManagerPage managerPage = new ManagerPage(username, database.getEmployeeName(username), database.getHoursWorked(username));
 								managerPage.open();
+							}
+							
+							else {
+								ClerkPage clerkPage = new ClerkPage(username, database.getEmployeeName(username), database.getHoursWorked(username));
+								clerkPage.open();
 							}
 						}
 						else {

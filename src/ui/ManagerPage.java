@@ -7,7 +7,6 @@ import org.eclipse.swt.layout.GridLayout;
 import org.eclipse.swt.widgets.Label;
 import org.eclipse.swt.widgets.Listener;
 import org.eclipse.swt.SWT;
-import org.eclipse.swt.widgets.Text;
 import org.eclipse.swt.layout.GridData;
 import org.eclipse.swt.widgets.Button;
 import org.eclipse.swt.events.SelectionAdapter;
@@ -114,6 +113,13 @@ public class ManagerPage {
 		gd_btnSearchForDvds.widthHint = 153;
 		btnSearchForDvds.setLayoutData(gd_btnSearchForDvds);
 		btnSearchForDvds.setText("Search for DVDs");
+		btnSearchForDvds.addListener(SWT.Selection, new Listener() {
+			@Override
+			public void handleEvent(Event event) {
+				ViewInventory viewInventory = new ViewInventory();
+				viewInventory.open();
+			}
+		});
 		
 		Button btnUpdateCustomer = new Button(shlManagerPage, SWT.NONE);
 		btnUpdateCustomer.setText("Update Customer");
@@ -144,6 +150,13 @@ public class ManagerPage {
 		gd_btnReturnDvd.widthHint = 154;
 		btnReturnDvd.setLayoutData(gd_btnReturnDvd);
 		btnReturnDvd.setText("Return DVD");
+		btnReturnDvd.addListener(SWT.Selection, new Listener() {
+			@Override
+			public void handleEvent(Event event) {
+				ReturnDVD returnDvd = new ReturnDVD();
+				returnDvd.open();
+			}
+		});
 		
 		Label lblEmployee = new Label(shlManagerPage, SWT.NONE);
 		lblEmployee.setText("Employee");
@@ -196,7 +209,9 @@ public class ManagerPage {
 		btnLogOut.addListener(SWT.Selection, new Listener() {
 			@Override
 			public void handleEvent(Event event) {
+				Login login = new Login();
 				shlManagerPage.close();
+				login.open();
 			}
 		});
 		btnLogOut.setText("Log Out");
